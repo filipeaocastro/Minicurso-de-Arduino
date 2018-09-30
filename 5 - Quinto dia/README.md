@@ -6,7 +6,7 @@
   Um dos programas cria um arquivo .txt apenas com as informações de amplitude da senoide distribuídas em uma coluna.
 
 ### Arquivo .csv
-  Um dos programas cria um arquivo .csv com as informações de tempo e amplitude da senoide, onde o tempo é definido pela função *millis()* no Arduino. As informações de tempo e amplitude são separadas por um ";" em cada linha.
+  O outro programa cria um arquivo .csv com as informações de tempo e amplitude da senoide, onde o tempo é definido pela função *millis()* no Arduino. As informações de tempo e amplitude são separadas por um ";" em cada linha.
 
 ### Observações:
 
