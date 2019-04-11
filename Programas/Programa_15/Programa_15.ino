@@ -17,7 +17,7 @@ void setup()
   pinMode(pino_LED_1, OUTPUT);
   pinMode(pino_LED_2, OUTPUT);
   pinMode(pino_LED_3, OUTPUT);
-  pinMode(pino_buzzer, INPUT);
+  pinMode(pino_buzzer, OUTPUT);
 }
 
 void loop() 
@@ -64,7 +64,7 @@ void recebeDado()
   valorRecebido = Serial.read();
   if(valorRecebido != 10)
     {
-      info = int(byte_recebido) - 48;
+      info = int(valorRecebido) - 48;
       Serial.print("\nDado Recebido: ");
       Serial.print(info);
     }

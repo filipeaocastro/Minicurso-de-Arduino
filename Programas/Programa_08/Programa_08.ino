@@ -5,7 +5,7 @@
 byte digitos [11][8] = 
 {//A, B, C, P, D, E, F, G 
   {1, 1, 1, 0, 1, 1, 1, 0}, // 0
-  {0, 0, 1, 0, 1, 0, 0, 0}, // 1
+  {0, 1, 1, 0, 0, 0, 0, 0}, // 1
   {1, 1, 0, 0, 1, 1, 0, 1}, // 2
   {0, 1, 1, 0, 1, 1, 0, 1}, // 3
   {0, 0, 1, 0, 1, 0, 1, 1}, // 4
@@ -23,18 +23,16 @@ void setup()
 {
   for(int i = 2; i < 11; i++)
     pinMode(i, OUTPUT);
-
-  pinMode(10, INPUT_PULLUP);
 }
 
 void loop()
 {
-    if(digitalRead(10) == 0)
-       i++;
+
+    i++;
     if(i == 10)
       i = 0;
     escreveDigito(i);
-    delay(100);
+    delay(400);
 }
 
 void escreveDigito(int n)

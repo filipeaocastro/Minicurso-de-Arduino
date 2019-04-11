@@ -19,5 +19,5 @@ void loop()
 	Serial.print("Tensao no Potenciometro: ");
 	Serial.print(tensao);
 	Serial.print(" V\n");
-	delay(500);
+	delay(100);
 }
