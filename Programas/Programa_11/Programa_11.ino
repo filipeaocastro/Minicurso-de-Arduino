@@ -29,21 +29,22 @@ void setup()
 	pinMode(pino_Rele, OUTPUT);
 
 	lcd.begin(16,2);
+
+	lcd.setCursor(0, 0);
+	lcd.print("Temperatura: ");
 }
 
 // A função loop() é executada repetidamente
 void loop()
 {
-	lcd.clear();
 	temperatura = float (thermistor.read());
 	temperatura /= 10; // É o mesmo que temperatura = temperatura / 10;
-	lcd.setCursor(0, 0);
-	lcd.print("Temperatura: ");
+	
 	lcd.setCursor(0, 1);
 	lcd.print(temperatura);
 	lcd.write(223); //Imprime a bolinha de graus
 	lcd.print("C");
-	delay(10);	
+		
 
 	if(temperatura < 22)
 	{
@@ -55,4 +56,6 @@ void loop()
 		lcd.setCursor(7, 1);
 		lcd.print(" QUENTE");
 	}
+
+	delay(100);
 }
