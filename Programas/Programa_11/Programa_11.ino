@@ -7,7 +7,7 @@
 #include "HardwareSerial.h"
 
 #define pino_NTC A5
-#define pino_Rele 10
+//#define pino_Rele 10
 
 // LiquidCrystal lcd(RS, E, D4, D5, D6, D7)
     LiquidCrystal lcd(2, 3,  4,  5,  6,  7);

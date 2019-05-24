@@ -12,7 +12,7 @@ LiquidCrystal lcd(2, 3, 4, 5, 6, 7);
 void setup()
 {
 	pinMode(9, OUTPUT);
-	//digitalWrite(9, 80);
+	analogWrite(9, 80);
 
 	lcd.begin(16,2);
 	lcd.print("Hello World!");
