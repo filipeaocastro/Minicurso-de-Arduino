@@ -1,6 +1,6 @@
 ﻿# Criação de arquivos com informações do Arduino
 
-  Aqui são mostrados os programas do Arduino que enviam dados de uma senoide para serem guardados. Para receber os dados do Aduino via comunicação Serial e criar os arquivos de texto é utilizada a linguagem [Processing](https://processing.org).
+  Aqui são mostrados os programas do Arduino que enviam dados de uma senoide para serem guardados. Para receber os dados do Aduino via comunicação Serial e criar os arquivos de texto foi utilizada um script escrito na linguagem [Processing](https://processing.org), entretanto qualquer linguagem que ofereça suporte à comunicação serial poderia ter sido utilizada.
 
 ## Arquivo .txt
   Um dos programas cria um arquivo .txt apenas com as informações de amplitude da senoide distribuídas em uma coluna.
